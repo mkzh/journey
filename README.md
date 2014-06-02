@@ -1,7 +1,7 @@
 Journey
 =======
 
-Your life. Your Journey. Never forget a moment, never forget your goals
+Your life. Your Journey. Never forget a moment, never forget your goals.
 With Journey, keeping track of your life and your goals has never been 
 easier. 
 
