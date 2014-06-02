@@ -1,14 +1,42 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
+  background: url('../images/waterfront.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: ;
 }
 
 #container {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#nav {
+  float: right;
+}
+
+#nav li{
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#nav li:hover {
+  color: rgb(103, 103, 255);
+}
+
+#nav li a:hover {
+  color: rgb(103, 103, 255);
+}
+
+
+#nav li a:link {
+  text-decoration: none;
+  color: none;
+}
+
+#nav li a:visited {
+  text-decoration: none;
+  color: none;
 }

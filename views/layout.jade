@@ -2,9 +2,23 @@ doctype html
 html
   head
     title= title
+    link(rel='stylesheet', href='/stylesheets/normalize.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src="http://code.jquery.com/jquery-1.11.0.min.js")
-    block header
+    block assets
   body
+    // Header
+    ul#nav
+      li#home
+        a(href="/") Home
+      - if (typeof(username) !== 'undefined') {
+          li#today Today
+          li#journal #{username}'s Journal
+          li#signout Logout
+      - } else {
+        li#signin Login
+      - }
+
+    // Content
     #container
       block content

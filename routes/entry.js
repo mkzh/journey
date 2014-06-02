@@ -9,3 +9,7 @@ exports.list = function(req, res) {
 exports.create = function(req, res) {
   res.render('create', {username: 'Mike'});
 }
+
+exports.save = function(req, res) {
+  
+}

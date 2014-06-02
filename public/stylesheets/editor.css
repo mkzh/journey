@@ -1,0 +1,12 @@
+#editor {
+  min-height: 200px;
+  background: rgba(255, 255, 255, .3);
+}
+
+.hidden {
+  display: none;
+}
+
+#editor:hover:not(:focus) {
+  outline: 1px dotted #aaf;
+}

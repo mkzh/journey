@@ -1,5 +1,12 @@
 extends layout
 
+block assets
+  link(rel="stylesheet", href='/stylesheets/editor.css')
+  script(src="/javascripts/editor.js")
+
 block content
-  h1 How was your day, #{username}?
-  div(contenteditable=true)
+  div#savenotify.hidden
+    p Now Saving...
+  h2 Welcome back, #{username}.
+  section#editor(contenteditable=true)
+  button#save Save entry
