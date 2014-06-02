@@ -14,7 +14,7 @@ exports.register = function(req, res) {
 };
 
 exports.registerPost = function(req, res) {
-   User.register(new Account({username: req.body.username, firstName: req.body.firstName}), 
+   User.register(new User({username: req.body.username, firstName: req.body.firstName}), 
             req.body.password, function(err, account) {
                if (err) {
                   return res.render('register', {account: account});

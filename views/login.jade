@@ -1,0 +1,13 @@
+extends layout
+
+block content
+   .container
+      h1 Login
+      p.lead Continue a journey.
+      br
+      form(role='form', action='login', method='post', style='max-width: 300px;')
+         .form-group
+            input.form-control(type='text', name='username', placeholder='Username')
+         .form-group
+            input.form-control(type='password', name='password', Placeholder='Password')
+         button.btn.btn-default(type='submit') Submit

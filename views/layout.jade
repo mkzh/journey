@@ -11,12 +11,16 @@ html
     ul#nav
       li#home
         a(href="/") Home
-      - if (typeof(username) !== 'undefined') {
+      - if (user) {
           li#today Today
-          li#journal #{username}'s Journal
-          li#signout Logout
+          li#journal #{user.firstName}'s Journal
+          li#signout 
+             a(href="/logout") Logout
       - } else {
-        li#signin Login
+         li#signin 
+            a(href="/login") Login
+         li#register
+            a(href="/register") Register
       - }
 
     // Content

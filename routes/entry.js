@@ -7,7 +7,7 @@ exports.list = function(req, res) {
 }
 
 exports.create = function(req, res) {
-  res.render('create', {username: 'Mike'});
+  res.render('create', {user: req.user});
 }
 
 exports.save = function(req, res) {

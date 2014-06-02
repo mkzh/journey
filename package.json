@@ -11,6 +11,8 @@
     "passport": "0.x",
     "passport-local": "1.x",
     "passport-local-mongoose": "0.x",
-    "jade": "*"
+    "jade": "*",
+    "grunt": "0.x",
+    "grunt-bower-task": "0.x"
   }
 }
