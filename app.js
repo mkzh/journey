@@ -63,9 +63,18 @@ passport.deserializeUser(User.deserializeUser());
 // Connect to mongoose server
 mongoose.connect('mongodb://localhost/journey');
 
-// Establish routes
+// Establish default routes
 app.get('/', routes.index);
-app.get('/users', user.list);
+
+// Establish user routes
+app.get('/user', user.list);
+app.get('/register', user.register);
+app.post('/register', user.registerPost);
+app.get('/login', user.login);
+app.post('/login', passport.authenticate('local'), user.loginPost);
+app.get('/logout', user.logout);
+
+// Establish entry routes
 app.get('/entry', entry.list);
 app.get('/create', entry.create);
 app.post('/save', entry.save);
